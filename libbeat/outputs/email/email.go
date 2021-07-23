@@ -106,7 +106,7 @@ func (p *Email) Publish(_ context.Context, batch publisher.Batch) error {
 
 // String String
 func (p *Email) String() string {
-	return "Email"
+	return "email"
 }
 
 // SendToMail SendToMail
