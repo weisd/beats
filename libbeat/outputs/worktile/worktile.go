@@ -5,12 +5,12 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/elastic/beats/libbeat/v7/beat"
-	"github.com/elastic/beats/libbeat/v7/common"
-	"github.com/elastic/beats/libbeat/v7/logp"
-	"github.com/elastic/beats/libbeat/v7/outputs"
-	"github.com/elastic/beats/libbeat/v7/outputs/codec"
-	"github.com/elastic/beats/libbeat/v7/publisher"
+	"github.com/elastic/beats/v7/libbeat/beat"
+	"github.com/elastic/beats/v7/libbeat/common"
+	"github.com/elastic/beats/v7/libbeat/logp"
+	"github.com/elastic/beats/v7/libbeat/outputs"
+	"github.com/elastic/beats/v7/libbeat/outputs/codec"
+	"github.com/elastic/beats/v7/libbeat/publisher"
 )
 
 var _ outputs.Client = &Worktile{}
