@@ -1,7 +1,7 @@
 package worktile
 
 import (
-	"github.com/elastic/beats/libbeat/outputs/codec"
+	"github.com/elastic/beats/v7/libbeat/outputs/codec"
 )
 
 type config struct {
