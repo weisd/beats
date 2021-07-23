@@ -6,12 +6,12 @@ import (
 	"net/smtp"
 	"strings"
 
-	"github.com/elastic/beats/libbeat/beat"
-	"github.com/elastic/beats/libbeat/common"
-	"github.com/elastic/beats/libbeat/logp"
-	"github.com/elastic/beats/libbeat/outputs"
-	"github.com/elastic/beats/libbeat/outputs/codec"
-	"github.com/elastic/beats/libbeat/publisher"
+	"github.com/elastic/beats/libbeat/v7/beat"
+	"github.com/elastic/beats/libbeat/v7/common"
+	"github.com/elastic/beats/libbeat/v7/logp"
+	"github.com/elastic/beats/libbeat/v7/outputs"
+	"github.com/elastic/beats/libbeat/v7/outputs/codec"
+	"github.com/elastic/beats/libbeat/v7/publisher"
 )
 
 var _ outputs.Client = &Email{}
