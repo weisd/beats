@@ -2,6 +2,7 @@ package email
 
 import (
 	"bytes"
+	"context"
 	"fmt"
 	"net/smtp"
 	"strings"
@@ -66,7 +67,7 @@ func (p *Email) Close() error {
 }
 
 // Publish Publish
-func (p *Email) Publish(batch publisher.Batch) error {
+func (p *Email) Publish(_ context.Context, batch publisher.Batch) error {
 	defer batch.ACK()
 
 	st := p.observer

@@ -2,6 +2,7 @@ package worktile
 
 import (
 	"bytes"
+	"context"
 	"net/http"
 	"net/url"
 
@@ -70,7 +71,7 @@ func (p *Worktile) Close() error {
 }
 
 // Publish Publish
-func (p *Worktile) Publish(batch publisher.Batch) error {
+func (p *Worktile) Publish(_ context.Context, batch publisher.Batch) error {
 	defer batch.ACK()
 
 	st := p.observer
