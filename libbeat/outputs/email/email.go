@@ -153,5 +153,5 @@ func NewFactory(im outputs.IndexManager, beat beat.Info, stats outputs.Observer,
 }
 
 func init() {
-	outputs.RegisterType("Email", NewFactory)
+	outputs.RegisterType("email", NewFactory)
 }
